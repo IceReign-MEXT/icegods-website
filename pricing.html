@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICEGODS Bot Pricing</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px 20px 20px;
+      background: linear-gradient(90deg, #ff6600, #ff9900);
+      color: #fff;
+    }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { font-size: 1.2em; }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .pricing-card {
+      background: #1a1a1a;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+      padding: 30px 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .pricing-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(255,102,0,0.5);
+    }
+
+    .pricing-card h3 { margin-top: 0; font-size: 1.5em; }
+    .pricing-card p { font-size: 1em; margin: 10px 0; }
+    .pricing-card span { font-size: 1.2em; font-weight: bold; color: #ff6600; }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #111;
+      color: #ccc;
+    }
+    footer a { color: #ff6600; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ICEGODS Bot Pricing & Plans</h1>
+  <p>Choose the plan that fits your needs</p>
+</header>
+
+<section class="pricing-grid">
+  <div class="pricing-card">
+    <h3>4 Hours Access</h3>
+    <p>Short-term monitoring & features</p>
+    <span>$5</span>
+  </div>
+
+  <div class="pricing-card">
+    <h3>8 Hours Access</h3>
+    <p>Extended bot usage</p>
+    <span>$10</span>
+  </div>
+
+  <div class="pricing-card">
+    <h3>12 Hours Access</h3>
+    <p>Full half-day bot access</p>
+    <span>$15</span>
+  </div>
+
+  <div class="pricing-card">
+    <h3>24 Hours Access</h3>
+    <p>One full day bot usage</p>
+    <span>$30</span>
+  </div>
+
+  <div class="pricing-card">
+    <h3>Weekly Plan</h3>
+    <p>Unlimited daily usage for 7 days</p>
+    <span>$50</span>
+  </div>
+
+  <div class="pricing-card">
+    <h3>Monthly Plan</h3>
+    <p>Full month access to all features</p>
+    <span>$150</span>
+  </div>
+
+  <div class="pricing-card">
+    <h3>Yearly Plan</h3>
+    <p>Full year access to all 26 bots</p>
+    <span>$1500</span>
+  </div>
+</section>
+
+<footer>
+  <p>Owner contact: <a href="tg://user?id=YOUR_TELEGRAM_ID">Chat Admin</a></p>
+  <a href="index.html">Back to Bot Network</a>
+</footer>
+
+</body>
+</html>
