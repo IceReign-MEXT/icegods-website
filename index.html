@@ -5,180 +5,197 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ICEGODS Multi-Bot Portal</title>
 <style>
-  body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #fff;
-  }
-  header {
-      text-align: center;
-      padding: 20px;
-      background-color: #1a1a1a;
-  }
-  header img {
-      width: 150px;
-      height: auto;
-      margin-bottom: 10px;
-  }
-  header h1 {
-      color: #00ffd5;
-      margin: 5px 0;
-  }
-  header p {
-      color: #ff00ff;
-      font-size: 18px;
-  }
-  section.story {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #1a1a1a;
-      border-radius: 10px;
-  }
-  section.story h2 {
-      color: #00ffd5;
-      text-align: center;
-      margin-bottom: 15px;
-  }
-  section.story p {
-      line-height: 1.6;
-  }
-  section.bots {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 10px;
-  }
-  .bot-card {
-      background-color: #1f1f1f;
-      border-radius: 10px;
-      padding: 15px;
-      width: 220px;
-      text-align: center;
-      transition: transform 0.2s;
-  }
-  .bot-card:hover {
-      transform: scale(1.05);
-  }
-  .bot-card img {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 10px;
-  }
-  .bot-card h3 {
-      margin: 10px 0 5px;
-      color: #00ffd5;
-  }
-  .bot-card p {
-      font-size: 14px;
-      color: #ddd;
-  }
-  .bot-card button {
-      margin-top: 10px;
-      padding: 8px 15px;
-      border: none;
-      border-radius: 5px;
-      background-color: #00ffd5;
-      color: #000;
-      cursor: pointer;
-      font-weight: bold;
-  }
-  section.pricing {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #1a1a1a;
-      border-radius: 10px;
-      text-align: center;
-  }
-  section.pricing h2 {
-      color: #00ffd5;
-      margin-bottom: 20px;
-  }
-  section.pricing .plan {
-      background-color: #222;
-      padding: 15px;
-      margin: 10px;
-      border-radius: 10px;
-      display: inline-block;
-      width: 200px;
-  }
-  section.pricing .plan h3 {
-      color: #ff00ff;
-  }
-  section.pricing .plan p {
-      margin: 10px 0 0;
-  }
+  body { margin:0; font-family: Arial, sans-serif; background:#121212; color:#fff; }
+  header { padding:20px; text-align:center; background:#1f1f1f; }
+  header h1 { margin:0; font-size:2rem; }
+  nav { background:#1a1a1a; padding:10px; text-align:center; }
+  nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
+  .container { display:flex; flex-wrap:wrap; justify-content:center; padding:20px; }
+  .card { background:#1e1e1e; margin:10px; padding:15px; border-radius:10px; width:220px; text-align:center; transition:0.3s; }
+  .card:hover { transform:scale(1.05); box-shadow:0 0 20px #0ff; }
+  .card img { width:80px; height:80px; margin-bottom:10px; }
+  .card h3 { margin:5px 0; font-size:1.1rem; }
+  .card p { font-size:0.9rem; }
+  .card a { display:inline-block; margin-top:10px; padding:5px 10px; background:#0ff; color:#000; text-decoration:none; border-radius:5px; font-weight:bold; }
 </style>
 </head>
 <body>
-
 <header>
-  <img src="assets/logo.png" alt="ICEGODS Logo">
   <h1>ICEGODS Multi-Bot Portal</h1>
-  <p>Guardian of the Blockchain</p>
+  <p>All 26 bots in one place 🚀</p>
 </header>
+<nav>
+  <a href="#bots">Bots</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<section class="story">
-  <h2>Our Story</h2>
-  <p>
-    ICEGODS began as a vision born out of struggle. I lost my project funds, but I refused to give up.
-    I joined forces with my best friends Mex and Bron, building ICEGODS, ICEDEVILS, and ICEBOYS IBS.
-    Together, we created the ICEBOYS IBS token for people who had lost hope in crypto.
-    ICEGODS is not just a brand—it’s a guardian. It watches over the blockchain, exposes dishonest developers,
-    and makes crypto a safer place for everyone. Every bot, every tool, is part of a mission:
-    <strong>to empower the community, protect the vulnerable, and build transparency</strong>.
-    From humble beginnings to the first multi-bot portal, ICEGODS stands as a symbol of resilience, innovation, and justice in crypto.
-  </p>
-</section>
+<section class="container" id="bots">
 
-<section class="bots">
-  <!-- Example Bot Card -->
-  <div class="bot-card">
-      <img src="assets/bot1.png" alt="MexiceGod Bot">
-      <h3>MexiceGod Bot</h3>
-      <p>All-in-one utility bot for your crypto portfolio.</p>
-      <button onclick="window.open('https://t.me/Trisbo_Bot', '_blank')">Start</button>
-  </div>
+<!-- All 26 bot cards -->
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="MexiceGod Bot">
+  <h3>MexiceGod Bot</h3>
+  <p>Main bot for multi-chain monitoring and management.</p>
+  <a href="https://t.me/MexiceGOd_Bot" target="_blank">Start Bot</a>
+</div>
 
-  <!-- Duplicate and update each bot card for all 26 bots -->
-</section>
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="Eyesteb Bot">
+  <h3>Eyesteb Bot</h3>
+  <p>Advanced monitoring and alert bot.</p>
+  <a href="https://t.me/Eyesteb_bot" target="_blank">Start Bot</a>
+</div>
 
-<section class="pricing">
-  <h2>Subscription Plans</h2>
-  <div class="plan">
-      <h3>4 Hours</h3>
-      <p>$5</p>
-  </div>
-  <div class="plan">
-      <h3>8 Hours</h3>
-      <p>$10</p>
-  </div>
-  <div class="plan">
-      <h3>12 Hours</h3>
-      <p>$15</p>
-  </div>
-  <div class="plan">
-      <h3>24 Hours</h3>
-      <p>$30</p>
-  </div>
-  <div class="plan">
-      <h3>Weekly</h3>
-      <p>$50</p>
-  </div>
-  <div class="plan">
-      <h3>Monthly</h3>
-      <p>$150</p>
-  </div>
-  <div class="plan">
-      <h3>Yearly</h3>
-      <p>$1500</p>
-  </div>
-</section>
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="EyeOfTheVault Bot">
+  <h3>EyeOfTheVault Bot</h3>
+  <p>Vault tracking and notifications bot.</p>
+  <a href="https://t.me/EyeOfTheVault_bot" target="_blank">Start Bot</a>
+</div>
 
-</body>
-</html>
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="Chronos Bot">
+  <h3>Chronos Bot</h3>
+  <p>Time-based analytics and alerts.</p>
+  <a href="https://t.me/Cheonos_BoT" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="Hunter Training Bot">
+  <h3>Hunter Training Bot</h3>
+  <p>Bot for training and skill tracking.</p>
+  <a href="https://t.me/Icehunter_Bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="IceGodWatcher Bot">
+  <h3>IceGodWatcher Bot</h3>
+  <p>Security and wallet monitoring bot.</p>
+  <a href="https://t.me/IceGodWatcher_Bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="ICEGODS Tracker Bot">
+  <h3>ICEGODS Tracker Bot</h3>
+  <p>Tracks wallet and blockchain activity.</p>
+  <a href="https://t.me/icegodstracker_bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="MexSweeper Bot">
+  <h3>MexSweeper Bot</h3>
+  <p>Fraud and scam detection bot.</p>
+  <a href="https://t.me/ScamSweeper_bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="MEX Tracker Bot">
+  <h3>MEX Tracker Bot</h3>
+  <p>Tracks multiple wallets in real-time.</p>
+  <a href="https://t.me/MEX_Tracker_Bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="ChinoSecureWallet Bot">
+  <h3>ChinoSecureWallet Bot</h3>
+  <p>Secure wallet management bot.</p>
+  <a href="https://t.me/ChinoSecureBot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="IceGodsBoost Bot">
+  <h3>IceGodsBoost Bot</h3>
+  <p>Boosts monitoring performance and alerts.</p>
+  <a href="https://t.me/IceGodsBoost_Bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="MEX Protector Bot">
+  <h3>MEX Protector Bot</h3>
+  <p>Protects wallets and detects unauthorized access.</p>
+  <a href="https://t.me/MEX_ProtectorBot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="ICEBOYS Bot">
+  <h3>ICEBOYS Bot</h3>
+  <p>Community token support and tracking bot.</p>
+  <a href="https://t.me/ICEBOYSIBS_bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="truth fixer Bot">
+  <h3>truth_fixer_bot</h3>
+  <p>Fixes transaction errors and misinformation.</p>
+  <a href="https://t.me/Mex_fixer_bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="PhoenixReign Bot">
+  <h3>PhoenixReign Bot</h3>
+  <p>Advanced recovery and monitoring bot.</p>
+  <a href="https://t.me/Mex_7_bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="ICEGODS_value Bot">
+  <h3>ICEGODS_value Bot</h3>
+  <p>Monitors token value and market movements.</p>
+  <a href="https://t.me/ICEGODS_value_bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="ICEGUARDIAN Bot">
+  <h3>ICEGUARDIAN Bot</h3>
+  <p>Security oversight and blockchain integrity bot.</p>
+  <a href="https://t.me/ICEHack_Bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="PhoenixReign Bot">
+  <h3>PhoenixReign_bot</h3>
+  <p>Recovery and alert bot.</p>
+  <a href="https://t.me/PhoenixReign_bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="Sub Bot">
+  <h3>Sub_BoT</h3>
+  <p>Subscription and membership bot.</p>
+  <a href="https://t.me/Mex_Sub_BoT" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="Ice_ChainPilot Bot">
+  <h3>Ice_ChainPilot Bot</h3>
+  <p>Chain monitoring and automated management bot.</p>
+  <a href="https://t.me/Ice_ChainPilot_bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="Icegods EchoEyes Bot">
+  <h3>Icegods EchoEyes Bot</h3>
+  <p>Real-time monitoring and alert bot.</p>
+  <a href="https://t.me/IcegodsEchoEyes_bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="Icegods VaultEyes Bot">
+  <h3>Icegods VaultEyes Bot</h3>
+  <p>Vault activity tracking and alerts.</p>
+  <a href="https://t.me/IcegodsVaultEyes_bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="Icegods PulseEyes Bot">
+  <h3>Icegods PulseEyes Bot</h3>
+  <p>Network pulse and blockchain health monitoring.</p>
+  <a href="https://t.me/IcegodsPulseEyes_bot" target="_blank">Start Bot</a>
+</div>
+
+<div class="card">
+  <img src="https://via.placeholder.com/80" alt="2030ICEGODS Bot">
+  <h3>2030ICEGODS Bot</h3>
+  <p>Long-term project and token tracking bot.</p>
+  <a href="https://t
