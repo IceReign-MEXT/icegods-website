@@ -1,201 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ICEGODS Multi-Bot Portal</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080d18">
+<meta name="description" content="ICE REIGN SYSTEMS builds practical Python automation, Telegram bots, blockchain monitoring tools and Web3 software.">
+<meta property="og:title" content="ICE REIGN SYSTEMS — Build. Protect. Connect.">
+<meta property="og:description" content="Independent software development, automation and Web3 tooling.">
+<meta property="og:type" content="website">
+<title>ICE REIGN SYSTEMS | Build. Protect. Connect.</title>
 <style>
-  body { margin:0; font-family: Arial, sans-serif; background:#121212; color:#fff; }
-  header { padding:20px; text-align:center; background:#1f1f1f; }
-  header h1 { margin:0; font-size:2rem; }
-  nav { background:#1a1a1a; padding:10px; text-align:center; }
-  nav a { color:#fff; margin:0 15px; text-decoration:none; font-weight:bold; }
-  .container { display:flex; flex-wrap:wrap; justify-content:center; padding:20px; }
-  .card { background:#1e1e1e; margin:10px; padding:15px; border-radius:10px; width:220px; text-align:center; transition:0.3s; }
-  .card:hover { transform:scale(1.05); box-shadow:0 0 20px #0ff; }
-  .card img { width:80px; height:80px; margin-bottom:10px; }
-  .card h3 { margin:5px 0; font-size:1.1rem; }
-  .card p { font-size:0.9rem; }
-  .card a { display:inline-block; margin-top:10px; padding:5px 10px; background:#0ff; color:#000; text-decoration:none; border-radius:5px; font-weight:bold; }
+:root{color-scheme:dark;--bg:#080d18;--panel:#111a2b;--line:#26344d;--text:#eef4ff;--muted:#a8b5ca;--cyan:#54d7e8;--blue:#5595ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#17304a 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid #ffffff17}.brand{font-weight:850;letter-spacing:.12em;font-size:14px}.brand span{color:var(--cyan)}nav{display:flex;gap:24px;font-size:14px;color:var(--muted)}nav a{text-decoration:none}nav a:hover,.link:hover{color:var(--cyan)}.hero{padding:92px 0 76px;max-width:800px}.eyebrow{color:var(--cyan);font-weight:750;letter-spacing:.18em;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.04;letter-spacing:-.055em;margin:18px 0}.hero h1 em{font-style:normal;color:var(--cyan)}.lead{font-size:19px;color:var(--muted);max-width:690px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-block;padding:12px 19px;border-radius:10px;text-decoration:none;font-weight:750;border:1px solid var(--line)}.primary{background:linear-gradient(110deg,var(--cyan),#7aa8ff);color:#06101c;border:0}.section{padding:54px 0}.section h2{font-size:30px;letter-spacing:-.03em;margin:0 0 8px}.sub{color:var(--muted);margin:0 0 24px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(150deg,#142238,#0e1727);border:1px solid var(--line);border-radius:16px;padding:23px}.card .num{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.12em}.card h3{margin:8px 0;font-size:19px}.card p{color:var(--muted);margin:0}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.project{padding:18px;border:1px solid var(--line);border-radius:13px;background:#0e1727}.project a{font-weight:750;text-decoration:none}.project p{margin:5px 0 0;color:var(--muted);font-size:14px}.contact{background:linear-gradient(120deg,#10253b,#10192b);border:1px solid var(--line);border-radius:18px;padding:30px}.contact p{color:var(--muted)}footer{padding:28px 0 42px;color:var(--muted);font-size:13px;border-top:1px solid #ffffff17;margin-top:56px}.social{display:flex;flex-wrap:wrap;gap:18px;margin-top:18px}.social a{color:var(--cyan);text-decoration:none}@media(max-width:700px){.grid{grid-template-columns:1fr}.projects{grid-template-columns:1fr}nav{gap:12px;font-size:12px}.hero{padding:65px 0 45px}.lead{font-size:17px}}
 </style>
 </head>
 <body>
-<header>
-  <h1>ICEGODS Multi-Bot Portal</h1>
-  <p>All 26 bots in one place 🚀</p>
-</header>
-<nav>
-  <a href="#bots">Bots</a>
-  <a href="#pricing">Pricing</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section class="container" id="bots">
-
-<!-- All 26 bot cards -->
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="MexiceGod Bot">
-  <h3>MexiceGod Bot</h3>
-  <p>Main bot for multi-chain monitoring and management.</p>
-  <a href="https://t.me/MexiceGOd_Bot" target="_blank">Start Bot</a>
+<div class="wrap">
+<header class="top"><a class="brand" href="#" style="text-decoration:none">ICE <span>REIGN</span> SYSTEMS</a><nav><a href="#services">Services</a><a href="#work">Projects</a><a href="#contact">Contact</a></nav></header>
+<main>
+<section class="hero"><div class="eyebrow">Independent software & automation</div><h1>Build. <em>Protect.</em><br>Connect.</h1><p class="lead">ICE REIGN SYSTEMS creates practical software tools across Python automation, Telegram bots, backend integrations and blockchain data. Built independently, tested carefully, and improved one release at a time.</p><div class="actions"><a class="btn primary" href="https://t.me/IceReignSystems" target="_blank" rel="noopener">Join our Telegram channel</a><a class="btn" href="https://github.com/IceReign-MEXT" target="_blank" rel="noopener">Explore GitHub</a></div></section>
+<section class="section" id="services"><h2>What we build</h2><p class="sub">Focused development services and practical digital tools.</p><div class="grid">
+<article class="card"><div class="num">01 / AUTOMATION</div><h3>Python & workflow tools</h3><p>Scripts, scheduled jobs, integrations and small tools that reduce repetitive work.</p></article>
+<article class="card"><div class="num">02 / TELEGRAM</div><h3>Bots & community utilities</h3><p>Bot setup, command flows, alerts, onboarding, support features and maintenance.</p></article>
+<article class="card"><div class="num">03 / WEB3</div><h3>Blockchain data tooling</h3><p>Exploratory wallet monitoring, public on-chain data integrations and transaction alerts.</p></article>
+</div></section>
+<section class="section" id="work"><h2>Selected work</h2><p class="sub">Public repositories. Some projects are prototypes or works in progress; check each repository for its current status.</p><div class="projects">
+<div class="project"><a href="https://github.com/IceReign-MEXT/ICEGODS" target="_blank" rel="noopener">ICEGODS ↗</a><p>Python and Web3 developer portfolio and tooling.</p></div>
+<div class="project"><a href="https://github.com/IceReign-MEXT/MEX-WarSystem" target="_blank" rel="noopener">MEX-WarSystem ↗</a><p>Automation and bot project.</p></div>
+<div class="project"><a href="https://github.com/IceReign-MEXT/IceReign-Machine" target="_blank" rel="noopener">IceReign-Machine ↗</a><p>Python automation / machine project.</p></div>
+<div class="project"><a href="https://github.com/IceReign-MEXT/mext-wallet-dashboard" target="_blank" rel="noopener">MEXT Wallet Dashboard ↗</a><p>Wallet dashboard project; see repository for implementation status.</p></div>
+</div></section>
+<section class="section" id="contact"><div class="contact"><div class="eyebrow">Let's work together</div><h2>Have a clear project in mind?</h2><p>For freelance tasks, bot fixes, Python automation or integration work, send a short description of the task, expected deliverable, deadline and budget.</p><div class="actions"><a class="btn primary" href="mailto:icegodsdevilgods@gmail.com?subject=ICE%20REIGN%20SYSTEMS%20Project%20Enquiry">Email ICE REIGN SYSTEMS</a><a class="btn" href="https://t.me/IceReignSystems" target="_blank" rel="noopener">Telegram channel</a></div><div class="social"><a href="https://github.com/IceReign-MEXT" target="_blank" rel="noopener">GitHub</a><a href="https://x.com/IceGodsSystems" target="_blank" rel="noopener">X</a></div></div></section>
+</main>
+<footer>© <span id="year">2026</span> ICE REIGN SYSTEMS. Independent software development. No investment or security guarantees are made by this site.</footer>
 </div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="Eyesteb Bot">
-  <h3>Eyesteb Bot</h3>
-  <p>Advanced monitoring and alert bot.</p>
-  <a href="https://t.me/Eyesteb_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="EyeOfTheVault Bot">
-  <h3>EyeOfTheVault Bot</h3>
-  <p>Vault tracking and notifications bot.</p>
-  <a href="https://t.me/EyeOfTheVault_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="Chronos Bot">
-  <h3>Chronos Bot</h3>
-  <p>Time-based analytics and alerts.</p>
-  <a href="https://t.me/Cheonos_BoT" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="Hunter Training Bot">
-  <h3>Hunter Training Bot</h3>
-  <p>Bot for training and skill tracking.</p>
-  <a href="https://t.me/Icehunter_Bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="IceGodWatcher Bot">
-  <h3>IceGodWatcher Bot</h3>
-  <p>Security and wallet monitoring bot.</p>
-  <a href="https://t.me/IceGodWatcher_Bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="ICEGODS Tracker Bot">
-  <h3>ICEGODS Tracker Bot</h3>
-  <p>Tracks wallet and blockchain activity.</p>
-  <a href="https://t.me/icegodstracker_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="MexSweeper Bot">
-  <h3>MexSweeper Bot</h3>
-  <p>Fraud and scam detection bot.</p>
-  <a href="https://t.me/ScamSweeper_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="MEX Tracker Bot">
-  <h3>MEX Tracker Bot</h3>
-  <p>Tracks multiple wallets in real-time.</p>
-  <a href="https://t.me/MEX_Tracker_Bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="ChinoSecureWallet Bot">
-  <h3>ChinoSecureWallet Bot</h3>
-  <p>Secure wallet management bot.</p>
-  <a href="https://t.me/ChinoSecureBot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="IceGodsBoost Bot">
-  <h3>IceGodsBoost Bot</h3>
-  <p>Boosts monitoring performance and alerts.</p>
-  <a href="https://t.me/IceGodsBoost_Bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="MEX Protector Bot">
-  <h3>MEX Protector Bot</h3>
-  <p>Protects wallets and detects unauthorized access.</p>
-  <a href="https://t.me/MEX_ProtectorBot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="ICEBOYS Bot">
-  <h3>ICEBOYS Bot</h3>
-  <p>Community token support and tracking bot.</p>
-  <a href="https://t.me/ICEBOYSIBS_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="truth fixer Bot">
-  <h3>truth_fixer_bot</h3>
-  <p>Fixes transaction errors and misinformation.</p>
-  <a href="https://t.me/Mex_fixer_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="PhoenixReign Bot">
-  <h3>PhoenixReign Bot</h3>
-  <p>Advanced recovery and monitoring bot.</p>
-  <a href="https://t.me/Mex_7_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="ICEGODS_value Bot">
-  <h3>ICEGODS_value Bot</h3>
-  <p>Monitors token value and market movements.</p>
-  <a href="https://t.me/ICEGODS_value_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="ICEGUARDIAN Bot">
-  <h3>ICEGUARDIAN Bot</h3>
-  <p>Security oversight and blockchain integrity bot.</p>
-  <a href="https://t.me/ICEHack_Bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="PhoenixReign Bot">
-  <h3>PhoenixReign_bot</h3>
-  <p>Recovery and alert bot.</p>
-  <a href="https://t.me/PhoenixReign_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="Sub Bot">
-  <h3>Sub_BoT</h3>
-  <p>Subscription and membership bot.</p>
-  <a href="https://t.me/Mex_Sub_BoT" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="Ice_ChainPilot Bot">
-  <h3>Ice_ChainPilot Bot</h3>
-  <p>Chain monitoring and automated management bot.</p>
-  <a href="https://t.me/Ice_ChainPilot_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="Icegods EchoEyes Bot">
-  <h3>Icegods EchoEyes Bot</h3>
-  <p>Real-time monitoring and alert bot.</p>
-  <a href="https://t.me/IcegodsEchoEyes_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="Icegods VaultEyes Bot">
-  <h3>Icegods VaultEyes Bot</h3>
-  <p>Vault activity tracking and alerts.</p>
-  <a href="https://t.me/IcegodsVaultEyes_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="Icegods PulseEyes Bot">
-  <h3>Icegods PulseEyes Bot</h3>
-  <p>Network pulse and blockchain health monitoring.</p>
-  <a href="https://t.me/IcegodsPulseEyes_bot" target="_blank">Start Bot</a>
-</div>
-
-<div class="card">
-  <img src="https://via.placeholder.com/80" alt="2030ICEGODS Bot">
-  <h3>2030ICEGODS Bot</h3>
-  <p>Long-term project and token tracking bot.</p>
-  <a href="https://t
+</body></html>
