@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://icereign-mext.github.io/icegods-website/sitemap.xml
